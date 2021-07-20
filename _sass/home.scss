@@ -1,0 +1,81 @@
+#gallery-header{
+    margin: 20vh auto 4rem auto;
+    font-family: Cinzel;
+    font-size: calc( 1rem + 1vw);
+    width: max-content;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    width: calc( 100% - 4rem );
+    margin: 0 auto;
+    row-gap: 20vh;
+}
+
+.gallery .img-and-text{
+    flex: 1 auto;
+    margin: 2rem 0;
+    position: relative;
+    background-color: rgb(239,239,255);
+    overflow: hidden;
+}
+
+.gallery .img-text{
+    position: absolute;
+    font-size: 6rem;
+    width: 55vw;
+    font-family: Source Code Pro;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.gallery .img-and-text .img{
+    height: 80vh;
+}
+
+.gallery .img-and-text a{
+    overflow: hidden;
+}
+
+.gallery .img-and-text a img {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.gallery .img-and-text a img:hover{
+    transition: transform 0.7s, filter 0.7s ;
+    filter: grayscale(0);
+    transform: scale(1);
+}
+
+.gallery .view-button {
+    margin: 0;
+    position: absolute;
+    font-family: Cinzel;
+    text-align: center;
+    font-size: calc( 1rem + 1vw);
+    top: 50%;
+    z-index: 1;
+    width: max-content;
+    opacity: 0;
+}
+
+.gallery .img-and-text .view-button .img-title {
+    font-style: italic;
+    font-size: calc(1rem);
+}
+
+.gallery .img-and-text .img-text.responsive {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.gallery .img-and-text .view-button.responsive {
+    opacity: 1;
+    transition: 0.7s;
+}
+

@@ -1,0 +1,54 @@
+.tnpFooter .footerMssg,
+.tnpFooter .footerCopyright{
+    margin-left: 10vw;
+}
+
+.tnpFooter .footerMssg{
+    font-size: 5rem;
+    color: grey;
+}
+
+.tnpFooter .footerLinks{
+    font-size: 2rem;
+}
+
+.tnpFooter .footerMssg .mssgHighlight{
+    display: block;
+    color: black;
+}
+
+.footerMssg .questionMark{
+    color: rgb(85,26,139);
+}
+
+.tnpFooter a{
+    text-decoration: none;
+}
+
+.tnpFooter{
+    background-color: rgb(239,239,255);
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+                ". ."
+                "a b"
+                "c ."
+                ". .";
+    
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.tnpFooter .footerMssg{
+    grid-area: a;
+}
+
+.tnpFooter .footerLinks{
+    grid-area: b;
+}
+
+.tnpFooter .footerCopyright{
+    grid-area: c;
+}
+
