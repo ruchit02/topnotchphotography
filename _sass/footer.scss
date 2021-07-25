@@ -16,11 +16,10 @@
 
 .tnpFooter .footerMssg{
     font-size: 15vw;
+    color: grey;
+    margin-left: 10px;
 }
 
-.tnpFooter .footerMssg{
-    color: grey;
-}
 
 .tnpFooter .footerCopyright{
     color: grey;
@@ -41,6 +40,7 @@
     align-items: flex-start;
     justify-content: space-between;
     font-size: 1rem;
+    margin-left: 10px;
 }
 
 .tnpFooter .footerLinks a{
@@ -48,7 +48,7 @@
 }
 
 .tnpFooter .footerCopyright{
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 800px){
