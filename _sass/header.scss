@@ -8,7 +8,6 @@
     justify-content: space-between;
 
     padding: 0 10px;
-    background-color: aqua;
     z-index: 2000;
 }
 
@@ -62,7 +61,7 @@
     height: 100%;
     width: 0px;
     
-    z-index: 1000;
+    z-index: 3000;
     overflow-x: hidden;
 
     display: flex;
@@ -126,8 +125,22 @@
     }
 
     .tnpHeader .headerLinks{
-        all: revert;
-        list-style-type: none;
+        box-sizing: border-box;
+
+        position: initial;
+        top: initial;
+        left: initial;
+        height: initial;
+    
+        z-index: initial;
+        overflow-x: initial;
+
+        flex-direction: row;
+
+        background-color: initial;
+        color: initial;
+
+        transition: initial;
 
         width: 100%;
         font-size: 1.5rem;

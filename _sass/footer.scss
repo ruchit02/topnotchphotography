@@ -37,9 +37,10 @@
 
 .tnpFooter .footerLinks{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
-    font-size: 1rem;
+    font-size: 8vw;
 }
 
 .tnpFooter .footerLinks a{
@@ -67,10 +68,6 @@
     }
 
     .tnpFooter .footerLinks{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
         font-size: 2rem;
         margin-top: calc(4vw - 1rem);
     }
