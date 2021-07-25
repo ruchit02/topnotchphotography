@@ -1,19 +1,29 @@
-.tnpFooter .footerMssg,
-.tnpFooter .footerCopyright{
-    margin-left: 10vw;
+.tnpFooter{
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px 25px;
+    align-items: center;
+    justify-content: space-between;
+    gap: initial;
+
+    height: 100vh;
+    padding-top: 10vh;
+
+    background-color: rgb(239,239,255);
 }
 
 .tnpFooter .footerMssg{
-    font-size: 5rem;
+    font-size: 15vh;
+}
+
+.tnpFooter .footerMssg{
     color: grey;
 }
 
-.tnpFooter .footerLinks{
-    font-size: 2rem;
-}
-
-.tnpFooter .footerLinks a{
-    color: rgb(85,26,139);
+.tnpFooter .footerCopyright{
+    color: grey;
 }
 
 .tnpFooter .footerMssg .mssgHighlight{
@@ -21,38 +31,51 @@
     color: black;
 }
 
-.footerMssg .questionMark{
+.tnpFooter .footerMssg .questionMark{
     color: rgb(85,26,139);
 }
 
-.tnpFooter a{
-    text-decoration: none;
-}
-
-.tnpFooter{
-    background-color: rgb(239,239,255);
-    height: 100vh;
-
-    display: grid;
-    grid-template-areas:
-                ". ."
-                "a b"
-                "c ."
-                ". .";
-    
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-}
-
-.tnpFooter .footerMssg{
-    grid-area: a;
-}
-
 .tnpFooter .footerLinks{
-    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.tnpFooter .footerLinks a{
+    color: rgb(85,26,139);
 }
 
 .tnpFooter .footerCopyright{
-    grid-area: c;
+    margin-left: 0;
 }
 
+@media screen and (min-width: 800px){
+    
+    .tnpFooter{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows:initial;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .tnpFooter .footerMssg{
+        font-size: 8vw;
+        margin-left: 5vw;
+    }
+
+    .tnpFooter .footerLinks{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 2rem;
+        margin-top: calc(4vw - 1rem);
+    }
+
+    .tnpFooter .footerCopyright{
+        margin-left: 5vw;
+    }
+}
