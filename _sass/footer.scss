@@ -3,11 +3,11 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 200px 25px;
+    grid-template-rows: 1fr 300px 105px;
     align-items: center;
     justify-content: space-between;
     gap: initial;
-
+    
     min-height: 100vh;
     font-weight: 700;
 
@@ -49,6 +49,12 @@
 
 .tnpFooter .footerCopyright{
     margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.tnpFooter .footerCopyright img{
+    width: 150px;
 }
 
 @media screen and (min-width: 800px){

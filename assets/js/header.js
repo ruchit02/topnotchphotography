@@ -17,8 +17,8 @@ window.onscroll = function(){
     let currScrollY = window.pageYOffset;
 
     if( currScrollY > prevScrollY ){
-        header.style.top = "-11vh";
-        headerLinksBox.style.top = "11vh";
+        header.style.top = "-75px";
+        headerLinksBox.style.top = "75px";
     }else{
         header.style.top = "0px";
         headerLinksBox.style.top = "0px";
