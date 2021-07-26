@@ -11,7 +11,7 @@
     z-index: 2000;
     font-weight: 700;
     height: 11vh;
-    background-color: rgb(239,239,255);
+    background-color: white;
 
     transition: 0.5s;
 }
@@ -64,8 +64,8 @@
 }
 
 .tnpHeader .nav-logo{
-    width: 6vh;
-    height: 6vh;
+    width: 5vh;
+    height: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,7 +76,7 @@
 .tnpHeader .nav-logo .nav-bars{
     box-sizing: border-box;
     width: 90%;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .tnpHeader .headerLinks{
@@ -84,7 +84,7 @@
 
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
     width: 0px;
     
