@@ -9,16 +9,40 @@
 
     padding: 0 10px;
     z-index: 2000;
+    font-weight: 700;
+    height: 10vh;
 
     transition: 0.5s;
 }
 
 .tnpHeader .websiteLogo{
-    height: 20vh;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    font-size: 1.5rem;
+    max-width: 150px;
 }
 
-.tnpHeader .websiteLogo img{
-    height: 100%;
+#firstname{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+#lastname{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+#designation{
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    font-size: 1.44rem;
+    line-height: 1;
 }
 
 .tnpHeader .headerLinks li:first-child .individual-galleries{
@@ -118,9 +142,7 @@
 
 
 
-
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 701px) {
     
     .tnpHeader .nav-logo{
         display: none;
@@ -144,8 +166,8 @@
 
         transition: initial;
 
-        width: 100%;
-        font-size: 1.5rem;
+        width: 50vw;
+        font-size: 1rem;
         text-align: center;
 
         display: flex;
@@ -187,5 +209,12 @@
 
     #gallery-checkbox:checked ~ .individual-galleries a{
         color: rgb(85,26,139);
+    }
+}
+
+@media screen and (min-width: 851px) {
+
+    .tnpHeader .headerLinks{
+        font-size: 1.2rem;
     }
 }

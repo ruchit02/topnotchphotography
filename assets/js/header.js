@@ -5,7 +5,7 @@ let closeBtn       = document.getElementById( "sideMenuClose" );
 let prevScrollY    = window.pageYOffset;
 
 navBar.onclick = function(){
-    headerLinksBox.style.width = "45%";
+    headerLinksBox.style.width = "160px";
 }
 
 closeBtn.onclick = function(){
@@ -17,7 +17,7 @@ window.onscroll = function(){
     let currScrollY = window.pageYOffset;
 
     if( currScrollY > prevScrollY ){
-        header.style.top = "-20vh";
+        header.style.top = "-10vh";
     }else{
         header.style.top = "0px";
     }
